@@ -13,6 +13,7 @@ public class Person {
     private byte myByte;
     static private Company company = new Company();
     private NewAgency newAgency;
+    private static final double PI = 3.14;
 
     public static void varArgsTestMethod(String... words){
         System.out.println(Arrays.toString(words));
@@ -21,5 +22,9 @@ public class Person {
     public static void main(String[] args){
         Person p1 = new Person();
         p1.varArgsTestMethod("muthu", "rama", "krishnan");
+
+        //static variable
+        System.out.println(PI);
+        System.out.println(Person.PI);
     }
 }
